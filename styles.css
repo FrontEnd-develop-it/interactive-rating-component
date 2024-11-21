@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121417;
+}
+
+section {
+    width: 415px;
+    background: #252d37;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #384452;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.question p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #959eac;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #384452;
+    color: #959eac;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+label:hover {
+    background: white;
+    color: #121417;
+}
+
+input[type="radio"]:checked + label {
+    background: #fb7413;
+    color: #121417;
+}
+
+button {
+    background: #fb7413;
+    color: #121417;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Overpass", sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    border-radius: 30px;
+    transition: all 0.8s ease-in-out;
+}
+
+button:hover {
+    background: white;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.info-about-rating {
+    color: #fb7413;
+    font-size: 15px;
+    font-weight: 700;
+    background: #384452;;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.thank {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #959eac;
+    width: 340px;
+}
